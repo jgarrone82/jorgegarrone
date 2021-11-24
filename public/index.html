@@ -17,15 +17,15 @@
   <header>
     <!-- navbar  -->
     <nav class="navbar">
-      <h1 class="brand">logo</h1>
+      <h1 class="brand"></h1>
       <div class="toggle-btn">
         <span></span>
         <span></span>
       </div>
       <ul class="links-container">
         <li class="links-item"><a href="#" class="link active">home</a></li>
-        <li class="links-item"><a href="#project-section" class="link">project</a></li>
         <li class="links-item"><a href="#about-section" class="link">about</a></li>
+        <li class="links-item"><a href="#project-section" class="link">project</a></li>
         <li class="links-item"><a href="#contact-section" class="link">contact</a></li>
       </ul>
     </nav>
@@ -34,12 +34,111 @@
   <section class="home">
     <div class="hero-content">
       <h1 class="hero-heading"><span class="highlight">Hi, </span>I am Jorge</h1>
-      <p class="profession">Web developer</p>
-      <p class="info">Senior Software Developer with more than 10 years of experience participating in IT Projects like building desktop, web, and REST applications.</p>
+      <p class="profession">Software developer</p>
+      <p class="info">Senior Software Developer with more than 10 years of experience participating in IT Projects like
+        building desktop, web, and REST applications.</p>
       <a href="#contact-section" class="btn">contact</a>
     </div>
     <img src="./img/profile.jpg" class="image" width="200px" alt="Profile Pic">
   </section>
-</body>
+  <!-- about section -->
+  <section class="about" id="about-section">
+    <h2 class="heading">about <span class="highlight">me</span></h2>
+    <p class="sub-heading">Lorem ipsum dolor sit amet consectetur. </p>
+    <div class="seperator"></div>
 
+    <div class="about-me-container">
+      <div class="left-col">
+        <img src="img/img2.png" class="about-image" alt="">
+      </div>
+      <div class="right-col">
+        <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus totam quia numquam
+          tempora nostrum earum similique enim laudantium iusto. Quaerat illo numquam minus pariatur, cum qui ipsum
+          sapiente, atque optio voluptatibus necessitatibus, quis dolores veniam delectus inventore beatae? Accusamus,
+          illum! Non nam dolores assumenda quibusdam repellat beatae quae eum atque sed, velit culpa, at animi cumque
+          suscipit. Ratione delectus dolores odit dicta ipsum libero molestiae et reprehenderit sapiente earum. Alias
+          aut architecto quis, earum iusto beatae quibusdam maiores, rerum, consequatur aliquid doloribus? Quas
+          accusantium quidem eos ex, aperiam recusandae. Veritatis?</p>
+        <a href="./pdf/Resume Jorge Ariel Garrone.pdf" class="btn">download cv</a>
+      </div>
+    </div>
+
+    <h2 class="heading">languages and framework i know</h2>
+    <div class="seperator"></div>
+    <div class="skill-container">
+      <div class="skill-card" style="--bg: #f06529">
+        <p class="skill">HTML</p>
+      </div>
+      <div class="skill-card" style="--bg: #379ad6">
+        <p class="skill">CSS</p>
+      </div>
+      <div class="skill-card" style="--bg: #cc6699">
+        <p class="skill">SCSS</p>
+      </div>
+      <div class="skill-card" style="--bg: #f7df1e">
+        <p class="skill">JavaScript</p>
+      </div>
+      <div class="skill-card large" style="--bg: #5ed9fb">
+        <p class="skill">ReactJS</p>
+      </div>
+      <div class="skill-card large" style="--bg: #83cd29">
+        <p class="skill">NodeJS</p>
+      </div>
+      <div class="skill-card" style="--bg: #326690">
+        <p class="skill">Postgres SQL</p>
+      </div>
+      <div class="skill-card" style="--bg: #ffa000">
+        <p class="skill">Firebase</p>
+      </div>
+      <div class="skill-card large" style="--bg: #5ed9fb">
+        <p class="skill">Much More</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- project section -->
+  <section class="project" id="project-section">
+    <h2 class="heading">Project<span class="highlight">s</span></h2>
+    <p class="sub-heading">Lorem ipsum dolor sit amet consectetur. </p>
+    <div class="seperator"></div>
+
+    <div class="filters">
+      <button class="filter-btn active" id="all">all</button>
+      <button class="filter-btn" id="javascript">javaScript</button>
+      <button class="filter-btn" id="ui">ui/ux</button>
+      <button class="filter-btn" id="backend">backend</button>
+      <button class="filter-btn" id="fullstack">fullStack</button>
+    </div>
+
+    <div class="project-container">
+      <!-- <div class="project-card">
+        <img src="./img/project (1).jpg" alt="">
+        <div class="content">
+          <h1 class="project-name">project one</h1>
+          <span class="tags">#javascript</span>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- contact form -->
+<section class="contact" id="contact-section">
+  <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+  <p class="sub-heading">Lorem ipsum dolor sit amet consectetur. </p>
+  <div class="seperator"></div>
+
+  <div class="contact-form">
+      <div class="name">
+          <input type="text" class="first-name" required placeholder="first name">
+          <input type="text" class="last-name" required placeholder="last name">
+      </div>
+      <input type="email" required class="email" placeholder="email">
+      <textarea class="message" placeholder="message" required></textarea>
+      <button class="btn contact-btn">contact</button>
+  </div>
+</section>
+
+<footer class="footer">made with love by modern web</footer>
+</body>
+<script src="project.js"></script>
+<script src="app.js"></script>
 </html>
