@@ -56,7 +56,7 @@ body{
 }
 
 .link.active::before,
-.seperator::before{
+.separator::before{
   content: '';
   position: absolute;
   bottom: 0;
@@ -69,7 +69,7 @@ body{
 }
 
 .link.active::after,
-.seperator::after{
+.separator::after{
   content: '';
   position: absolute;
   bottom: 2px;
@@ -178,7 +178,7 @@ body{
   opacity: 0.7;
 }
 
-.seperator{
+.separator{
   width: 25%;
   margin: 20px auto;
   position: relative;
@@ -196,25 +196,7 @@ body{
   position: relative;
 }
 
-.left-col::before{
-  content: 'This is me';
-  text-transform: capitalize;
-  position: absolute;
-  right: 0;
-  top: -20px;
-}
 
-.left-col::after{
-  content: '';
-  position: absolute;
-  top: -10px;
-  right: 80px;
-  width: 50px;
-  height: 2px;
-  background: #fff;
-  transform-origin: right;
-  transform: rotate(-30deg);
-}
 
 .about-image{
   border-radius: 10px;
@@ -322,6 +304,15 @@ body{
   transition: .5s;
   text-transform: capitalize;
   opacity: 0;
+}
+
+.project-card .content a{
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+  position: relative;
 }
 
 .project-name{

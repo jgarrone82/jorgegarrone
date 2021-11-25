@@ -18,8 +18,9 @@ projects.forEach(project => {
     <div class="project-card" data-tags="#all, ${project.tags}">
         <img src="img/${project.image}" alt="">
         <div class="content">
-            <h1 class="project-name">${project.name}</h1>
+            <h1 class="project-name"><a href="${project.link}" target="_blank"> ${project.name} </a></h1>
             <span class="tags">${project.tags}</span>
+
         </div>
     </div>
     `;
